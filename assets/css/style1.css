@@ -1,0 +1,28 @@
+body {
+    background-color:fuchsia;
+    background-repeat: no-repeat;    
+}
+
+.pinkImage {
+    background-image: url("../img/pink.jpg");
+    width: 1300px;
+    height: 409px;
+    background-position: center;
+    background-size: cover;
+}
+
+#bgDescription {
+    color: blueviolet;
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-weight: bolder;
+}
+
+#picDescription {
+    color: royalblue;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: larger;
+
+}

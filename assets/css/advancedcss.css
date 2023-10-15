@@ -1,0 +1,116 @@
+.box {
+  width:200px;
+  height: 200px;
+  border: 1px solid gray;
+  margin: 50px;
+}
+
+@keyframes animation1 {
+  /* from background-color: bisque;
+  to background-color: turquoise */
+
+  0% { background-color: aliceblue; width: 25px; }
+  25% { background-color: aquamarine; width: 250px; }
+  50% { background-color: blue; width: 200px; }
+  75% { background-color: yellow; width: 100px; }
+  100% { background-color: olivedrab; width: 200px; }
+}
+
+.animation1 {
+  animation-name: animation1;
+  animation-duration: 20s;
+  background-color: bisque;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transition {
+  0% { transform: translateX(0) }
+  100% { transform: translateX(100%) }
+}
+
+.transition {
+  animation-name: transition;
+  animation-duration: 10s;
+  background-color: violet;
+  animation-iteration-count: infinite;
+  /* transition: width 1s, transform 10s; */
+  /* task: make the box move 200px to the right in 3seconds */
+}
+
+/* .transition:hover {
+  width: 350px;
+  transform: translateX(0px, 360px);
+} */
+
+@keyframes rotate-element {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+
+.rotate-element {
+  /* transform: rotate(360 deg); */
+  animation-name: rotate-element;
+  animation-duration: 10s;
+  background-color: green;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scale-element {
+  0% { transform: scale(0) }
+  50% { transform: scale(2.5) }
+  100% { transform: scale(0) }
+}
+
+.scale-element {
+  animation-name: scale-element;
+  animation-duration: 10s;
+  background-color: blue;
+  animation-iteration-count: infinite;
+}
+
+@keyframes skew-element {
+  0% { transform: skew(30deg) }
+  50% { transform: skew(20deg) }
+  100% { transform: skew(30deg) }  
+}
+
+.skew-element {
+  /* transform: skew(30deg, 20deg); */
+  /* transform: skewX(-30deg); */
+  /* transform: skewY (-20deg); */
+  animation-name: skew-element;
+  animation-duration: 10s;
+  background-color: yellow;
+  animation-iteration-count: infinite;
+}
+
+@keyframes translate-element {
+  0% { transform: translateY(0) }
+  50% {transform: translateY(-300px)}
+  100% { transform: translateY(0) }
+}
+
+.translate-element {
+  /* transform: translate (50px, 20px); */
+  /* transform: translateX(50px); */
+  /* transform: translateY(-550pc); */
+  animation-name: translate-element;
+  animation-duration: 10s;
+  background-color: orange;
+  animation-iteration-count: infinite;
+}
+
+@keyframes combined-transform {
+  0% { transform: rotate(0) scale(0) skew(10deg) translate(20px)}
+  50% { transform: rotate(45deg) scale(1.5) skew(5deg) translate(10px)}
+  100% { transform: rotate(0) scale(0) skew(10deg) translate(20px)}
+}
+
+.combined-transform {
+  animation-name: combined-transform;
+  animation-duration: 10s;
+  /* transform: rotate(45deg) scale(1.5) skew(10deg, 5deg);
+  translate (20px, 10px); */
+  background-color: brown;
+  animation-iteration-count: infinite;
+}

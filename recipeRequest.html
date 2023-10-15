@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Submission Form</title>
+</head>
+<body>
+  <h1>Recipe Submission Form</h1>
+  <form action="submit_recipe.php" method="post">
+    <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+        
+    <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+      <br/>
+      <br/>
+
+    <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <br/>
+      <br/>
+        
+    <label for="recipe">Recipe:</label>
+      <textarea id="recipe" name="recipe" rows="4" required></textarea>
+      <br/>
+      <br/>
+      
+    <label for="cuisine">Cuisine:</label>
+      <select id="cuisine" name="cuisine">
+        <option value="foreign">Foreign Dish</option>
+        <option value="filipino">Filipino Dish</option>
+      </select>
+      <br/>
+      <br/>
+        
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset Form">
+    </form>
+    
+    <p>Explore more recipes:</p>
+    <ul>
+        <li><a href="webdev1_1b.html">Chopsuey</a></li>
+        <li><a href="webdev1_1d.html">Chicken Adobo</a></li>
+    </ul>
+</body>
+</html>
