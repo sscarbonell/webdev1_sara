@@ -8,16 +8,16 @@ length = 23;
 
 var product = length * width * height;
 
-console.log(product)
+console.log(product);
 
 if (product % 2 == 0) {
-  console.log('the product is even number')
+  console.log('the product is even number');
 } else if (product % 2 != 0) {
-  console.log('the product is odd number')
+  console.log('the product is odd number');
 }
 
 if (product % 3 == 0) {
-  console.log('divisible by 3')
+  console.log('divisible by 3');
 } else if (product % 3 != 0) {
-  console.log('not divisible by 3')
+  console.log('not divisible by 3');
 }
