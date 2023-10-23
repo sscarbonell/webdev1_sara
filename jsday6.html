@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Day 6</title>
+  <link href="assets/css/jsday6.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <div id="generator"></div>
+  <div id="myAnimation"></div>
+  <div id="myContainer"></div>
+  <div id="printing"></div>
+  <div id="events">
+    <p onmouseenter="hover()" onmouseout="out()">
+      Hello There XD
+    </p>
+  </div>
+  <p onclick="colStyle()" class="collection">p1</p>
+  <p onclick="colStyle()" class="collection">p2</p>
+  <p onclick="colStyle()" class="collection">p3</p>
+  <p onclick="colStyle()" class="collection">p4</p>
+
+  <p>To Do List: Text to add a todo, and a list to show the current todo list:</p>
+  <div id="todoList">
+    <div id="addTodoContainer">
+      <input type="text" id="todoInput" />
+      <button
+        type="button"
+        onclick="submitTodo()">
+        Add
+    </button>
+    </div>
+    <div id="todoListContainer">
+      <ul id="todoUL">
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="assets/js/jsday6.js"></script>
+</html>
