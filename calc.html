@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="assets/css/calc.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="flex justify-center items-center content-center flex-wrap">
+  <div id="calcContainer">
+    <div id="calcContent" class="flex flex-col gap-2.5">
+      <div id="displayRow" class="text-white text-6xl flex justify-end">
+        19.5
+      </div>
+      <div id="buttonsRow" class="flex flex-column justify-between">
+        <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center">AC</div>
+        <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center">[+/-]</div>
+        <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center">%</div>
+        <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center">/</div>
+      </div>
+      <div id="buttonsRow" class="flex flex-column justify-between">
+        <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+        onclick="pressNumber(7)">7</div>
+        <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center">8</div>
+        <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center">9</div>
+        <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center">x</div>
+      </div>
+      <div id="buttonsRow" class="flex flex-column justify-between">
+        <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center">4</div>
+        <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center">5</div>
+        <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center">6</div>
+        <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center">-</div>
+      </div>
+      <div id="buttonsRow" class="flex flex-column justify-between">
+        <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center">1</div>
+        <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center">2</div>
+        <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center">3</div>
+        <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center">+</div>
+      </div>
+      <div id="buttonsRow" class="flex flex-column justify-between">
+        <div class="buttonItem text-2xl font-light text-white flex grow basis-[14]  flex-initial justify-center items-center">0</div>
+        <div class="buttonItem text-2xl font-bold text-white flex basis-[70px] shrink-0 justify-center items-center">.</div>
+        <div class="buttonItem text-2xl font-light text-white flex basis-[70px] shrink-0 justify-center items-center">=</div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="assets/js/calc.js"></script>
+</html>
