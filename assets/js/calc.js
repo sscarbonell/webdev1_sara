@@ -12,7 +12,12 @@ function storeOperator(op) {
 }
 
 function positiveNegative() {
-  value = value * -1;
+  value = -value;
+  displayElement.innerHTML = value.toString();
+}
+
+function calculatePercentage() {
+  value = value / 100;
   displayElement.innerHTML = value.toString();
 }
 
@@ -31,18 +36,16 @@ function compute() {
     value = value2 * value;
   } else if (operator == '/') {
     value = value2 / value;
-  }
+  } 
   operator = '';
   displayElement.innerHTML = value.toString();
 }
 
 function pressDecimalPoint() {
   if (Number.isInteger(value)) {
-    valueString = value.toString(); 
-    valueString = `${valueString}.`;
-    value = parseFloat(valueString).toFixed(1);
+    value = value + '.';
   }
-  displayElement.innerHTML = valueString;
+  displayElement.innerHTML = value.toString();
 }
 
 function pressNumber(buttonValue) {
@@ -68,9 +71,8 @@ function pressNumber(buttonValue) {
         var newDecimalValue = buttonValue / (10 ** (decimalCount + 1));
       }
       value = value + newDecimalValue; 
-      valueString = value.toString(); 
     }
     
   }
-  displayElement.innerHTML = valueString;
+  displayElement.innerHTML = value.toString();
 }
