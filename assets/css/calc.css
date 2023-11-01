@@ -24,6 +24,13 @@ body {
   padding: 10px;
 }
 
+#displayRow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
 .buttonItem {
   width: 70px;
   height: 70px;
@@ -33,3 +40,4 @@ body {
 .buttonItem:hover {
   background-color: #6c62ff;
 }
+
