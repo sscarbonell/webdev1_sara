@@ -1,0 +1,17 @@
+body {
+  background-color: pink;
+  background-repeat: no-repeat;    
+}
+
+.bgImage {
+  background-image: url("../img/gallery/treasure.jpg");
+  width: 1300px;
+  height: 409px;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery-item:hover {
+  transform: scale(1.5); 
+}
+
